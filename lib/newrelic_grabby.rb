@@ -53,7 +53,7 @@ module NewRelic
       attr_accessor :enabled
 
       def debug(message)
-        puts "\033[33m[grabby]\033[0m #{message}"
+        Rails.logger.info "\033[33m[grabby]\033[0m #{message}"
       end
 
       #
